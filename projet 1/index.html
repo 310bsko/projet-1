@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Site UFR MI</title>
+</head>
+<body>
+    <header>
+        <div class="principal">
+            <div class="logo">
+                <a href="#"><img src="image/UFR MI.jpeg" alt="Photo de l'UFR MI"></a>
+            </div>
+            <ul>
+                <li class="active"><a href="#">Accueil</a></li>
+                <li><a href="#cours">Cours</a></li>
+                <li><a href="#examens">Sujets d'examen</a></li>
+                <li><a href="#apropos">À propos</a></li>
+
+            </ul>
+        </div>
+        <div class="titre">
+            <h1>AKWABA À L'UFR MI</h1>
+        </div>
+        <div class="citations">
+            <blockquote>
+                <p>"Le secret des ordinateurs, c’est qu’il suffit d’avoir le bon petit génie de l’informatique pour en forcer l’entrée."– Jack Higgins</p>
+            </blockquote>
+            <blockquote>
+                <p>"Les mathématiques sont la poésie de la logique." – Albert Einstein</p>
+            </blockquote>
+            <blockquote>
+                <p>"Un programmeur préfère le noir, car la lumière attire les bugs." – Anonyme</p>
+            </blockquote>
+            <blockquote>
+                <p>"La simplicité est la sophistication suprême." – Leonardo da Vinci</p>
+            </blockquote>
+            <blockquote>
+                <p>"L’informatique, c’est l’art de faire danser les bits pour résoudre les mystères du monde." – Anonyme</p>
+            </blockquote>
+        </div>
+    </header>
+
+    <!-- Section Cours -->
+    <section id="cours" class="section-cours">
+        <h2>Nos Cours</h2>
+        <div class="contenu">
+            <p>Explorez des cours qui donnent le sourire !</p>
+            <div class="cours-list">
+                <div class="cours-group">
+                    <h3>Mathematique</h3>
+                    <form action="" class="dropdown-form">
+                        <select name="cours-mathematique" onchange="if(this.value) window.open(this.value, '_blank');">
+                            <option value="">Choisir une année</option>
+                            <option value="cours/topo.pdf">2023</option>
+                            <option value="cours/serie.pdf">2022</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="cours-group">
+                    <h3>Informatique</h3>
+                    <form action="" class="dropdown-form">
+                        <select name="cours-informatique" onchange="if(this.value) window.open(this.value, '_blank');">
+                            <option value="">Choisir une année</option>
+                            <option value="cours/algo.pdf">2023</option>
+                            <option value="cours/web.pdf">2022</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Sujets d'examen -->
+    <section id="examens" class="section-examens">
+        <h2>Sujets d'examen</h2>
+        <div class="contenu">
+            <p>Préparez-vous avec joie et confiance !</p>
+            <div class="examens-list">
+                <div class="examen-group">
+                    <h3>Examen - Mathematiques</h3>
+                    <form action="" class="dropdown-form">
+                        <select name="examen-algo" onchange="if(this.value) window.open(this.value, '_blank');">
+                            <option value="">Choisir une année</option>
+                            <option value="examens/serie.pdf">2023</option>
+                            <option value="examens/topo.pdf">2022</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="examen-group">
+                    <h3>Examen - Informatiques</h3>
+                    <form action="" class="dropdown-form">
+                        <select name="examen-web" onchange="if(this.value) window.open(this.value, '_blank');">
+                            <option value="">Choisir une année</option>
+                            <option value="examens/algo.pdf">2023</option>
+                            <option value="examens/web.pdf">2022</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos (en bas) -->
+    <footer id="apropos" class="section-apropos">
+        <h2>À propos de nous</h2>
+        <div class="contenu">
+            <p>Nous sommes l’UFR MI, une communauté passionnée par l’informatique et les mathématiques, dédiée à former les esprits brillants de demain.</p>
+            <div class="apropos-content">
+                <div class="apropos-item">
+                    <h3>Notre mission</h3>
+                    <p>Fournir une éducation de qualité, accessible et innovante, pour préparer nos étudiants aux défis du monde numérique.</p>
+                </div>
+                <div class="apropos-item">
+                    <h3>Notre histoire</h3>
+                    <p>Fondée il y a plus de 20 ans, l’UFR MI a évolué pour devenir un pilier de l’enseignement supérieur en informatique dans la région.</p>
+                </div>
+                <div class="apropos-item">
+                    <h3>Nos valeurs</h3>
+                    <p>Excellence, créativité et collaboration : voilà ce qui nous anime au quotidien !</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

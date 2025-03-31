@@ -1,0 +1,286 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Century Gothic", sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("image/ufrmi.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo a {
+    display: block;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin-top: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+
+ul li a:hover,
+ul li.active a {
+    background: #fff;
+    color: #000;
+}
+
+.principal {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.titre {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.titre h1 {
+    color: #fff;
+    font-size: 65px;
+}
+
+.titre p {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+/* Citations */
+.citations {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 800px;
+}
+
+.citations blockquote {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 20px 0;
+    font-style: italic;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
+/* Section Cours */
+.section-cours {
+    padding: 60px 20px;
+    background-color: #e6f7ff;
+    text-align: center;
+    color: #333;
+}
+
+.section-cours h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00b4d8;
+    text-transform: uppercase;
+}
+
+.section-cours p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.cours-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cours-group {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cours-group h3 {
+    font-size: 1.8em;
+    color: #00b4d8;
+    margin: 0;
+    min-width: 200px;
+    text-align: right;
+}
+
+.dropdown-form {
+    display: inline-block;
+}
+
+.dropdown-form select {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00b4d8;
+    background-color: #fff;
+    border: 2px solid #00b4d8;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 200px;
+}
+
+.dropdown-form select:hover,
+.dropdown-form select:focus {
+    background-color: #00b4d8;
+    color: #fff;
+    outline: none;
+}
+
+/* Section Sujets d'examen */
+.section-examens {
+    padding: 60px 20px;
+    background-color: #fff0f0;
+    text-align: center;
+    color: #333;
+}
+
+.section-examens h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-transform: uppercase;
+}
+
+.section-examens p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.examens-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.examen-group {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.examen-group h3 {
+    font-size: 1.8em;
+    color: #ff6f61;
+    margin: 0;
+    min-width: 200px;
+    text-align: right;
+}
+
+.dropdown-form select {
+    padding: 15px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ff6f61;
+    background-color: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 200px;
+}
+
+.dropdown-form select:hover,
+.dropdown-form select:focus {
+    background-color: #ff6f61;
+    color: #fff;
+    outline: none;
+}
+
+/* Section À propos (Footer) */
+.section-apropos {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #66cc99, #00b4d8);
+    text-align: center;
+    color: #fff;
+}
+
+.section-apropos h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.section-apropos p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.apropos-content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.apropos-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.apropos-item h3 {
+    font-size: 1.5em;
+    color: #00b4d8;
+    margin-bottom: 10px;
+}
+
+.apropos-item p {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.apropos-item:hover {
+    transform: translateY(-5px);
+}
